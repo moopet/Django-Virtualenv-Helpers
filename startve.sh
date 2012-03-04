@@ -33,7 +33,7 @@ cd $PROJECTS_PATH/$VE
 workon $VE
 RCDATA.default
 
-cat >| $RCFILE.shell <<RCDATA.runserver
+cat >| $RCFILE.shell <<RCDATA.shell
 #!/bin/bash
 source ~/.bashrc
 source virtualenvwrapper.sh

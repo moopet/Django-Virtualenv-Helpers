@@ -14,7 +14,7 @@ fi
 
 CURRENT_VE=${VIRTUAL_ENV##*/}
 VE="${1:-$CURRENT_VE}"
-RCFILE="/tmp/${0##.*/}.$$"
+RCFILE="/tmp/$(basename $0).$$"
 
 workon $VE 2>/dev/null
 
